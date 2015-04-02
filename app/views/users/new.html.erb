@@ -20,10 +20,16 @@
 				<%= f.text_field :email, placeholder: "Email", class: "form-control"  %>
 			</div>
 			<div class="form-group">
-				<%= f.text_field :address, placeholder: "Full Address", class: "form-control"  %>
+				<%= f.text_field :address, placeholder: "Address Line", class: "form-control"  %>
 			</div>
 			<div class="form-group">
-				<%= f.text_field :phone_number, placeholder: "Phone Number", class: "form-control"  %>
+				<%= f.text_field :city, placeholder: "City", class: "form-control"  %>
+			</div>
+			<div class="form-group">
+				<%= f.text_field :state, placeholder: "State", class: "form-control"  %>
+			</div>
+			<div class="form-group">
+				<%= f.text_field :zip, placeholder: "Zip", class: "form-control"  %>
 			</div>
 			<div class="form-group">
 				<%= f.password_field :password, placeholder: "Password", class: "form-control"  %>
