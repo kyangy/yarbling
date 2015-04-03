@@ -1,3 +1,5 @@
+<% if logged_in? == false %>
+
 <header>
 	<div id='cssmenu'>
 		<ul class="text-center">
@@ -9,5 +11,25 @@
 		</ul>
 	</div>
 </header>
+
+<% end %>
+
+<% if logged_in? == true %>
+
+<header>
+	<div id='cssmenu'>
+		<ul class="text-center">
+		   <li class='active'><a href='#'>Discover</a></li>
+		   <li><a href='#'>Products</a></li>
+		   <li><%= link_to "It's Sexy Time", root_path %></li>
+		   <li><a href='#'>How It Works</a></li>
+		   <li><%= link_to "Log Out", logout_path, method: :delete %></li>
+		</ul>
+	</div>
+</header>
+
+<% end %>
+
+
 
 
