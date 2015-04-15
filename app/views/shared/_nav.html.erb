@@ -1,10 +1,10 @@
 <% if logged_in? == false %>
 
-<header class="nav-bar">
+<header class="nav-bar mainmenu">
 	<div id='cssmenu'>
 		<ul class="text-center">
-		   <li class='active nav-border'><a href='#'>Discover</a></li>
-		   <li class="nav-border"><a href='#'>Products</a></li>
+		   <li class='active nav-border'><a href='#head'>Discover</a></li>
+		   <li class="nav-border"><a href='#products'>Products</a></li>
 		   <li class="logo"><%= link_to ".", root_path, class: "logo-name" %></li>
 		   <li class="nav-border"><a href='#'>How It Works</a></li>
 		   <li class="nav-border"><%= link_to "Log In", login_path %></li>
