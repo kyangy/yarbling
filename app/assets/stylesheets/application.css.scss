@@ -16,6 +16,7 @@
 
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
+ @import url(http://fonts.googleapis.com/css?family=Pacifico|Patua+One|Courgette);
 
  body {
    background: image-url('blue.jpg');
@@ -220,6 +221,6 @@
    margin-top: 60px;
  }
 
- #cssmenu li .logo {
-   
+ #cssmenu li .logo:hover {
+   transform: rotate(360deg);
  }
