@@ -3,11 +3,11 @@
 <header class="nav-bar mainmenu">
 	<div id='cssmenu'>
 		<ul class="text-center">
-		   <li class='active nav-border'><a href='#head'>Discover</a></li>
-		   <li class="nav-border"><a href='#products'>Products</a></li>
-		   <li class="logo"><%= link_to ".", root_path, class: "logo-name" %></li>
-		   <li class="nav-border"><a href='#'>How It Works</a></li>
-		   <li class="nav-border"><%= link_to "Log In", login_path %></li>
+		   <li class="active"><a href='#discover'>Discover</a></li>
+		   <li><a href='#products'>Products</a></li>
+		   <li class="logo"><%= link_to ".", "#head", class: "logo-name" %></li>
+		   <li><a href='#'>How It Works</a></li>
+		   <li><%= link_to "Log In", login_path %></li>
 		</ul>
 	</div>
 </header>
@@ -16,12 +16,12 @@
 
 <% if logged_in? == true %>
 
-<header>
+<header class="nav-bar mainmenu">
 	<div id='cssmenu'>
 		<ul class="text-center">
-		   <li class='active'><a href='#'>Discover</a></li>
-		   <li><a href='#'>Products</a></li>
-		   <li class="logo"><%= link_to "HELMZMEN", root_path %></li>
+		   <li class="active"><a href='#discover'>Discover</a></li>
+		   <li><a href='#products'>Products</a></li>
+		   <li class="logo"><%= link_to ".", "#head", class: "logo-name" %></li>
 		   <li><a href='#'>How It Works</a></li>
 		   <li><%= link_to "Log Out", logout_path, method: :delete %></li>
 		</ul>

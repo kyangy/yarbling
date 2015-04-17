@@ -1,0 +1,9 @@
+<%= form_tag captain_path(current_user.id), method: :put do %>
+
+
+<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+        data-description="Captain"
+        data-amount="700"></script>
+
+<% end %>
